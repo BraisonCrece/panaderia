@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+background-color: FDF6F6;
+margin: 0;
+font-family: "DM Sans", sans-serif;
+
+
+}
+
+.title {
+    padding: 2.5rem 0;
+}
+
+.nav-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

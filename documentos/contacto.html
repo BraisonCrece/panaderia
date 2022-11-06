@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Panadería Migas Amigas</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title-main">Panadería Migas Amigas</h1>
+
+        <a href="index.html">
+            <img src="images/LOGOlogo.png" alt="Logo Panadería" />
+        </a>
+
+        <form action="">
+            <input type="search" placeholder="¿Qué deseas buscar?" />
+        </form>
+
+        <nav id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="cafeteria.html" class="nav-menu--item">Cafetería</a></li>
+                <li><a href="panaderia.html" class="nav-menu--item">Panadería</a>
+                    <ul>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Descripción</a></li>
+                        <li><a href="#">Sistema de elaboración</a></li>
+                    </ul>
+                </li>
+                <li><a href="pasteleriaBolleria.html" class="nav-menu--item">Pastelería - Bollería</a></li>
+                <li><a href="empanadas.html" class="nav-menu--item">Empanadas</a></li>
+                <li><a href="contacto.html" class="nav-menu--item">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-label="formulario de pedido">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos del Contacto</legend>
+
+                    <label for="nombre">Nombre: </label>
+                    <input name='nombre' type='text' /><br>
+
+
+                    <label for="apellidos">Apellidos: </label>
+                    <input name='Apellidos' type='text' /><br>
+
+                    <label for="email">Email: </label>
+                    <input name='email' type='email' /><br><br>
+
+                    <label for="telefono">Número de teléfono:</label>
+                    <input type="tel" id="telefono"><br>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Datos de entrega</legend>
+
+                    <label for="fecha">Fecha de entrega: </label>
+                    <input type="date" id="fecha">
+
+                    <label for="entrega">Modo de entrega: </label>
+                    <!--Etiqueta label Estudios-->
+                    <select id="dino-select">
+                        <optgroup label="Envío a domicilio">
+                            <option>Te lo llevamos a casa</option>
+                            <option>Solicitas servicio a empresa privada</option>
+                        </optgroup>
+                        <optgroup label="Recoger en Panadería">
+                            <option>Para comer aquí</option>
+                            <option>Para llevar</option>
+                        </optgroup>
+                    </select><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Qué productos desea: </legend>
+                    <label for="seleccione">Seleccione</label>
+                    <select id="product-select">
+                        <optgroup label="Panadería">
+                            <option value="">Pan de cerelaes</option>
+                            <option value="">Pan payés</option>
+                            <option value="">Hogaza de Leon</option>
+                            <option value="">Pan germinado</option>
+                            <option value="">Pan de leche</option>
+                            <option value="">Pan de espelta</option>
+                            <option value="">Pan candeal</option>
+                            <option value="">Pan trenzado</option>
+                            <option value="">Pan de centeno</option>
+                            <option value="">Pan de molde</option>
+                        </optgroup>
+                        <optgroup label="Pastelería - Bollería">
+                            <option value="">Baklava</option>
+                            <option value="">Trufas</option>
+                            <option value="">Surtido</option>
+                            <option value="">Cheesecake</option>
+                            <option value="">Croissant</option>
+                            <option value="">Tarta de chocolate</option>
+                            <option value="">Mini-cakes</option>
+                            <option value="">Tarta alegría</option>
+                        </optgroup>
+                        <optgroup label="Empanadas">
+                            <option value="">Empanada de carne con verduras</option>
+                            <option value="">Empanada de espinacas con queso de cabra</option>
+                            <option value="">Empanada de pollo</option>
+                            <option value="">Empanada Mixta</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+                Comentarios, información adicional:
+                <textarea name="textarea" rows="10" cols="50" placeholder="Comentarios"></textarea>
+
+                <input type="submit" value="Enviar" />
+            </form>
+
+        </section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2963.0714134985046!2d-8.647939284275754!3d42.0416489631418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd259a910624ddef%3A0x549a4fc4944d844d!2sR%C3%BAa%20Barca%2C%2036700%20Tui%2C%20Pontevedra!5e0!3m2!1ses!2ses!4v1665777543649!5m2!1ses!2ses"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <footer>
+            <h2>CONTACTO</h2>
+            <img src="images/telefono.png" alt="Ícono telefono">
+            <p>+34 611 679 89 98</p>
+            <img src="images/Email.png" alt="Ícono email">
+            <p>migasamigas@gmail.com</p>
+            <h2>SIGUENOS EN: </h2>
+            <img src="images/twitter.png" alt="Logo twitter">
+            <img src="images/Instagram.png" alt="Logo Instagram">
+            <img src="images/facebook.png" alt="Logo facebook">
+        </footer>
+
+        <aside></aside>
+    </main>
+    <aside>
+        <section>
+            <h2>¿Conoces la hostoria del pan de molde?</h2>
+            <p>
+                Durante milenios, hacer pan, fue parte de la vida doméstica en Estados Unidos. Cerca del año 1890
+                alrededor
+                del 90% del pan, era hecho en casa.
+                La noción de pan rebanado o de molde, se le puede asociar a un inventor estadounidense llamado Otto
+                Rohwedder, quien era un joyero al que le
+                gustaba inventar máquinas nuevas. Cuando se le ocurrió que podía inventar una de uso comercial para
+                cortar
+                pan vendió sus tres joyerías y utilizó
+                ese dinero para financiar <a href="#">Leer más...</a>
+            </p>
+        </section>
+        <div aria-label="promociones">
+            <p>Inscribete en nuesto boletin para recibir nuevas ofertas <a href="#"> aquí</a></p>
+            <p>
+                2 X 1
+                Todos los martes y jueves
+                De 08:00 a 10:00 hs
+                Pregunta por productos en promoción
+            </p>
+        </div>
+        <section>
+            <h2>El pan integral comenzará a ser considerado pan común</h2>
+            <p>
+                Sí, como lees, a partir de ahora el pan de cereales, el de centeno y el de masa madre, habituales en
+                la
+                mayoría de los hogares, serán considerados pan común. Para que el pan sea considerado integral, se
+                exigirá
+                que el 100% de la harina también lo sea. <a href="#">Leer más...</a>
+            </p>
+        </section>
+    </aside>
+    <footer>
+        <h2>CONTACTO</h2>
+        <img src="images/telefono.png" alt="Ícono telefono">
+        <p>+34 611 679 89 98</p>
+        <img src="images/Email.png" alt="Ícono email">
+        <p>migasamigas@gmail.com</p>
+        <h2>SIGUENOS EN: </h2>
+        <img src="images/twitter.png" alt="Logo twitter">
+        <img src="images/Instagram.png" alt="Logo Instagram">
+        <img src="images/facebook.png" alt="Logo facebook">
+    </footer>s
+</body>
+
+</html>
