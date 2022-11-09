@@ -41,22 +41,23 @@
 
     <main>
         <section aria-label="formulario de pedido">
+            <h2>Formulario de pedido</h2>
             <form action="#" method="post">
                 <fieldset>
                     <legend>Datos del Contacto</legend>
-
+<!-- este formulario no es accesible ya que falta vincular los label con los input y eso se hace con id y form-->
                     <label for="nombre">Nombre: </label>
-                    <input name='nombre' type='text' /><br>
+                    <input name='nombre' type='text' id="nombre" /><br>
 
 
                     <label for="apellidos">Apellidos: </label>
-                    <input name='Apellidos' type='text' /><br>
+                    <input name='Apellidos' type='text' id="apellidos" /><br>
 
                     <label for="email">Email: </label>
-                    <input name='email' type='email' /><br><br>
+                    <input name='email' type='email' id="email" /><br><br>
 
                     <label for="telefono">Número de teléfono:</label>
-                    <input type="tel" id="telefono"><br>
+                    <input type="tel" id="telefono" id="telefono"><br>
 
                 </fieldset>
 
@@ -64,11 +65,11 @@
                     <legend>Datos de entrega</legend>
 
                     <label for="fecha">Fecha de entrega: </label>
-                    <input type="date" id="fecha">
+                    <input type="date" id="fecha" id="fecha">
 
                     <label for="entrega">Modo de entrega: </label>
                     <!--Etiqueta label Estudios-->
-                    <select id="dino-select">
+                    <select id="dino-select" id="entrega">
                         <optgroup label="Envío a domicilio">
                             <option>Te lo llevamos a casa</option>
                             <option>Solicitas servicio a empresa privada</option>
@@ -77,13 +78,14 @@
                             <option>Para comer aquí</option>
                             <option>Para llevar</option>
                         </optgroup>
-                    </select><br><br>
+                    </select>
+                    <!-- tratar siempre de no usar br <br><br> -->
                 </fieldset>
 
                 <fieldset>
                     <legend>Qué productos desea: </legend>
                     <label for="seleccione">Seleccione</label>
-                    <select id="product-select">
+                    <select id="product-select" id="selecciona">
                         <optgroup label="Panadería">
                             <option value="">Pan de cerelaes</option>
                             <option value="">Pan payés</option>
@@ -114,78 +116,52 @@
                         </optgroup>
                     </select>
                 </fieldset>
-                Comentarios, información adicional:
+               <p>Comentarios, información adicional:</p>
                 <textarea name="textarea" rows="10" cols="50" placeholder="Comentarios"></textarea>
 
                 <input type="submit" value="Enviar" />
             </form>
 
         </section>
+        <!-- falta la dirección, no está en ninguna parte y los horarios de apertura-->
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2963.0714134985046!2d-8.647939284275754!3d42.0416489631418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd259a910624ddef%3A0x549a4fc4944d844d!2sR%C3%BAa%20Barca%2C%2036700%20Tui%2C%20Pontevedra!5e0!3m2!1ses!2ses!4v1665777543649!5m2!1ses!2ses"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        <footer>
-            <h2>CONTACTO</h2>
-            <img src="images/telefono.png" alt="Ícono telefono">
-            <p>+34 611 679 89 98</p>
-            <img src="images/Email.png" alt="Ícono email">
-            <p>migasamigas@gmail.com</p>
-            <h2>SIGUENOS EN: </h2>
-            <img src="images/twitter.png" alt="Logo twitter">
-            <img src="images/Instagram.png" alt="Logo Instagram">
-            <img src="images/facebook.png" alt="Logo facebook">
-        </footer>
-
-        <aside></aside>
-    </main>
     <aside>
-        <section>
-            <h2>¿Conoces la hostoria del pan de molde?</h2>
-            <p>
-                Durante milenios, hacer pan, fue parte de la vida doméstica en Estados Unidos. Cerca del año 1890
-                alrededor
-                del 90% del pan, era hecho en casa.
-                La noción de pan rebanado o de molde, se le puede asociar a un inventor estadounidense llamado Otto
-                Rohwedder, quien era un joyero al que le
-                gustaba inventar máquinas nuevas. Cuando se le ocurrió que podía inventar una de uso comercial para
-                cortar
-                pan vendió sus tres joyerías y utilizó
-                ese dinero para financiar <a href="#">Leer más...</a>
-            </p>
-        </section>
-        <div aria-label="promociones">
-            <p>Inscribete en nuesto boletin para recibir nuevas ofertas <a href="#"> aquí</a></p>
-            <p>
-                2 X 1
-                Todos los martes y jueves
-                De 08:00 a 10:00 hs
-                Pregunta por productos en promoción
-            </p>
-        </div>
-        <section>
-            <h2>El pan integral comenzará a ser considerado pan común</h2>
-            <p>
-                Sí, como lees, a partir de ahora el pan de cereales, el de centeno y el de masa madre, habituales en
-                la
-                mayoría de los hogares, serán considerados pan común. Para que el pan sea considerado integral, se
-                exigirá
-                que el 100% de la harina también lo sea. <a href="#">Leer más...</a>
-            </p>
-        </section>
-    </aside>
-    <footer>
-        <h2>CONTACTO</h2>
-        <img src="images/telefono.png" alt="Ícono telefono">
-        <p>+34 611 679 89 98</p>
-        <img src="images/Email.png" alt="Ícono email">
-        <p>migasamigas@gmail.com</p>
-        <h2>SIGUENOS EN: </h2>
-        <img src="images/twitter.png" alt="Logo twitter">
-        <img src="images/Instagram.png" alt="Logo Instagram">
-        <img src="images/facebook.png" alt="Logo facebook">
-    </footer>s
+        <aside aria-label="promociones">
+           <p>Inscribete en nuesto boletin para recibir nuevas ofertas <a href="#"> aquí</a></p>
+           <p>
+               2 X 1
+               Todos los martes y jueves
+               De 08:00 a 10:00 hs
+               Pregunta por productos en promoción
+           </p>
+        </aside>
+   </aside>
+</main>
+
+   <footer>
+    <h3>CONTACTO</h3>
+    <p>
+      <img src="../images/telefono.png" alt="Ícono telefono" /><a
+        href="tel:+346116798998"
+        >+34 611 679 89 98</a
+      >
+    </p>
+    <p>
+      <img src="../images/Email.png" alt="Ícono email" /><a
+        href="mailto:migasamigas@gmail.com"
+        >migasamigas@gmail.com</a
+      >
+    </p>
+  <p>
+    <h3>SIGUENOS EN:</h3>
+    <img src="../images/twitter.png" alt="Logo twitter" />
+    <img src="../images/Instagram.png" alt="Logo Instagram" />
+    <img src="../images/facebook.png" alt="Logo facebook" />
+  </p>
+ </footer>
 </body>
 
 </html>

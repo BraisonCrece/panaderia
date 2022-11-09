@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Panadería Migas Amigas</title>
+  </head>
+
+  <body>
+    <header>
+        <!-- El logo se coloca antes del título-->
+        <a href="index.html">
+          <img src="./images/LOGOlogo.png" alt="Logo Panadería" />
+        </a>
+      <h1 class="title-main">Panadería Migas Amigas</h1>
+
+
+      <form action="">
+        <input type="search" placeholder="¿Qué deseas buscar?" />
+      </form>
+
+      <nav id="nav-menu" class="nav-menu">
+        <ul>
+          <li>
+            <a href="./documentos/cafeteria.html" class="nav-menu--item"
+              >Cafetería</a
+            >
+          </li>
+          <li>
+            <!--Si hacéis un submenú es que se supone que tenéis una página por cada opción y no necesitamos el enlace a panadería
+                        en caso de que sea una sección dentro de la propia página yo no pondría este submenú solo en panadería
+                        -->
+            <a href="/documentos/panaderia.html" class="nav-menu--item"
+              >Panadería</a
+            >
+            <ul>
+              <li><a href="#">Productos</a></li>
+              <li><a href="#">Descripción</a></li>
+              <li><a href="#">Sistema de elaboración</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/documentos/pasteleriaBolleria.html" class="nav-menu--item"
+              >Pastelería - Bollería</a
+            >
+          </li>
+          <li>
+            <a href="/documentos/empanadas.html" class="nav-menu--item"
+              >Empanadas</a
+            >
+          </li>
+          <li>
+            <a href="/documentos/contacto.html" class="nav-menu--item"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Falta el menú para cambiar el idioma en todas las páginas-->
+    </header>
+
+    <main>
+      <!-- esto es contenido de la página como artículo o como section, dependiendo de lo que tendrá dentro-->
+      <article>
+        <h2>Nuestra panadería</h2>
+        <p>
+          aquí se supone que presentas la panadería a la persona que está
+          consultándola
+        </p>
+      </article>
+      <!-- mejor article-->
+      <article>
+        <h2>¿Conoces la hostoria del pan de molde?</h2>
+        <p>
+          Durante milenios, hacer pan, fue parte de la vida doméstica en Estados
+          Unidos. Cerca del año 1890 alrededor del 90% del pan, era hecho en
+          casa. La noción de pan rebanado o de molde, se le puede asociar a un
+          inventor estadounidense llamado Otto Rohwedder, quien era un joyero al
+          que le gustaba inventar máquinas nuevas. Cuando se le ocurrió que
+          podía inventar una de uso comercial para cortar pan vendió sus tres
+          joyerías y utilizó ese dinero para financiar
+          <a href="#">Leer más...</a>
+        </p>
+      </article>
+      <article>
+        <h2>El pan integral comenzará a ser considerado pan común</h2>
+        <p>
+          Sí, como lees, a partir de ahora el pan de cereales, el de centeno y
+          el de masa madre, habituales en la mayoría de los hogares, serán
+          considerados pan común. Para que el pan sea considerado integral, se
+          exigirá que el 100% de la harina también lo sea.
+          <a href="#">Leer más...</a>
+        </p>
+      </article>
+    </main>
+    <aside>
+      <!-- dentro de un aside ponemos aside-->
+      <aiside aria-label="promociones">
+        <p>
+          Inscribete en nuesto boletin para recibir nuevas ofertas
+          <a href="#"> aquí</a>
+        </p>
+        <p>
+          2 X 1 Todos los martes y jueves De 08:00 a 10:00 hs Pregunta por
+          productos en promoción
+        </p>
+      </aiside>
+    </aside>
+    <footer>
+      <h3>CONTACTO</h3>
+      <p>
+        <img src="images/telefono.png" alt="Ícono telefono" /><a
+          href="tel:+346116798998"
+          >+34 611 679 89 98</a
+        >
+      </p>
+      <p>
+        <img src="images/Email.png" alt="Ícono email" /><a
+          href="mailto:migasamigas@gmail.com"
+          >migasamigas@gmail.com</a
+        >
+      </p>
+    <p>
+      <h3>SIGUENOS EN:</h3>
+      <img src="images/twitter.png" alt="Logo twitter" />
+      <img src="images/Instagram.png" alt="Logo Instagram" />
+      <img src="images/facebook.png" alt="Logo facebook" />
+    </p>
+      
+
+    </footer>
+  </body>
+</html>
